@@ -1,6 +1,6 @@
 Name:           GAPDoc
 Version:        1.5.1
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        GAP documentation tool
 
 Group:          Sciences/Mathematics
@@ -79,6 +79,9 @@ rm -f $RPM_BUILD_ROOT%{_gap_dir}/pkg/%{name}-%{version}/{CHANGES,GPL,README}
 %{_gap_dir}/pkg/%{name}-%{version}/
 
 %changelog
+* Tue Jan 15 2013 pcpa <paulo.cesar.pereira.de.andrade@gmail.com> - 1.5.1-3
+- Rebuild after proper gap bootstrap
+
 * Tue Sep 25 2012 Jerry James <loganjerry@gmail.com> - 1.5.1-2
 - Rebuild to fix _gap_dir expansion issue
 
