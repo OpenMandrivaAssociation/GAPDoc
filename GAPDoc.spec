@@ -70,9 +70,11 @@ cd ..
 cp -a %{name}-%{version} $RPM_BUILD_ROOT%{_gap_dir}/pkg
 rm -f $RPM_BUILD_ROOT%{_gap_dir}/pkg/%{name}-%{version}/{CHANGES,GPL,README}
 
-%posttrans -p %{_bindir}/update-gap-workspace
+%posttrans
+    %{_bindir}/update-gap-workspace
 
-%postun -p %{_bindir}/update-gap-workspace
+%postun
+    %{_bindir}/update-gap-workspace
 
 %files
 %doc CHANGES GPL README
