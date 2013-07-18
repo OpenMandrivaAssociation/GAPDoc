@@ -1,15 +1,12 @@
 Name:           GAPDoc
 Version:        1.5.1
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        GAP documentation tool
-
-Group:          Sciences/Mathematics
 # The package is all GPLv2+ except for some of the mathml files
 License:        GPLv2+ and MPLv1.1 and W3C
 URL:            http://www.math.rwth-aachen.de/~Frank.Luebeck/%{name}/
 Source0:        http://www.math.rwth-aachen.de/~Frank.Luebeck/%{name}/%{name}-%{version}.tar.bz2
 BuildArch:      noarch
-
 BuildRequires:  gap-devel
 Requires:       gap-core
 Requires:       texlive
@@ -79,19 +76,3 @@ rm -f $RPM_BUILD_ROOT%{_gap_dir}/pkg/%{name}-%{version}/{CHANGES,GPL,README}
 %files
 %doc CHANGES GPL README
 %{_gap_dir}/pkg/%{name}-%{version}/
-
-%changelog
-* Tue Jan 15 2013 pcpa <paulo.cesar.pereira.de.andrade@gmail.com> - 1.5.1-3
-- Rebuild after proper gap bootstrap
-
-* Tue Sep 25 2012 Jerry James <loganjerry@gmail.com> - 1.5.1-2
-- Rebuild to fix _gap_dir expansion issue
-
-* Thu Sep 13 2012 Jerry James <loganjerry@gmail.com> - 1.5.1-1
-- New upstream version
-
-* Mon Aug 20 2012 Jerry James <loganjerry@gmail.com> - 1.3-2
-- Fix line endings in some mathml files
-
-* Tue Jan 31 2012 Jerry James <loganjerry@gmail.com> - 1.3-1
-- Initial RPM
