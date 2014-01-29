@@ -1,6 +1,6 @@
 Name:           GAPDoc
 Version:        1.5.1
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        GAP documentation tool
 # The package is all GPLv2+ except for some of the mathml files
 License:        GPLv2+ and MPLv1.1 and W3C
