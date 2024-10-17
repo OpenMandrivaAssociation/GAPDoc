@@ -4,7 +4,7 @@ Release:        6%{?dist}
 Summary:        GAP documentation tool
 # The package is all GPLv2+ except for some of the mathml files
 License:        GPLv2+ and MPLv1.1 and W3C
-URL:            http://www.math.rwth-aachen.de/~Frank.Luebeck/%{name}/
+URL:            https://www.math.rwth-aachen.de/~Frank.Luebeck/%{name}/
 Source0:        http://www.math.rwth-aachen.de/~Frank.Luebeck/%{name}/%{name}-%{version}.tar.bz2
 BuildArch:      noarch
 BuildRequires:  gap-devel
